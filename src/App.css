@@ -1,0 +1,47 @@
+body {
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+}
+
+.total-width {
+  width: 100%;
+  border-bottom: 3px soliod #393939;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+h3:hover {
+  color: #ed161e;
+}
+
+.menu-header {
+  display: flex;
+  width: 75%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 300px;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  height: 200px;
+}
