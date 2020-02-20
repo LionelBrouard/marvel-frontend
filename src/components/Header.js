@@ -8,7 +8,9 @@ function Header() {
       <div className="total-width">
         <div className="wrapper">
           <div className="header">
-            <img className="logo" src={Logo} alt="Logo Marvel"></img>
+            <Link to="/perso">
+              <img className="logo" src={Logo} alt="Logo Marvel"></img>
+            </Link>
             <div className="menu-header">
               <Link to="/perso">
                 <h3>PERSONNAGES</h3>

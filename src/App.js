@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+
 import Cookies from "js-cookie";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
@@ -8,6 +9,7 @@ import Footer from "./components/Footer";
 import Perso from "./containers/Perso";
 import Comics from "./containers/Comics";
 import Favoris from "./containers/Favoris";
+import UniquePerso from "./containers/UniquePerso";
 
 function App() {
   return (
@@ -20,6 +22,9 @@ function App() {
         <Route path="/perso">
           <Perso />
         </Route>
+        <Route path="/unique_perso/:id">
+          <UniquePerso />
+        </Route>
         <Route path="/comics">
           <Comics />
         </Route>
@@ -27,7 +32,7 @@ function App() {
           <Favoris />
         </Route>
       </Switch>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }
