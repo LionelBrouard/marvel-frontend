@@ -11,7 +11,7 @@ function UniquePerso(elem) {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        "http://localhost:3000/unique_perso/" + id
+        "https://marvel-neil.herokuapp.com/unique_perso/" + id
       );
       setData(response.data.data.results);
       // console.log(response.data);

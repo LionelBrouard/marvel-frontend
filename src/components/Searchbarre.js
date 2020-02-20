@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Searchbarre(props) {
   return (
@@ -12,7 +12,7 @@ function Searchbarre(props) {
             const value = event.target.value;
             props.setSearch(value);
           }}
-        />{" "}
+        />
         <button className="button-searchname">Valider</button>
       </div>
     </>

@@ -6,11 +6,14 @@ import Searchbarre from "../components/Searchbarre";
 const Perso = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState([]);
+
   const [search, setSearch] = useState("");
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("http://localhost:3000/perso");
+      const response = await axios.get(
+        "https://marvel-neil.herokuapp.com/perso"
+      );
       console.log(response.data);
       setData(response.data.data.results);
       // console.log(response.data);
@@ -26,7 +29,6 @@ const Perso = () => {
         <div>
           <Searchbarre search={search} setSearch={setSearch} />
           {data.map((elem, index) => {
-            console.log(elem);
             return (
               <>
                 <div key={index} className="wrapper perso-card-gen">

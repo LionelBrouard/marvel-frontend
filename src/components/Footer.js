@@ -4,7 +4,8 @@ function Footer() {
   return (
     <div className="footer">
       <p>
-        Made with <a href="#">React</a> at <a href="#">Le Reacteur</a> By{" "}
+        Made with <a href="https://fr.reactjs.org/">React</a> at{" "}
+        <a href="https://www.lereacteur.io/">Le Reacteur</a> By{" "}
         <a href="#">NeiL</a>
       </p>
     </div>

@@ -15,6 +15,7 @@ function Comic({ elem }) {
           <p className="comic-desc">{elem.description}</p>
         </div>
       </div>
+      <div className="button-fav">Ajouter aux favoris</div>
     </>
   );
 }

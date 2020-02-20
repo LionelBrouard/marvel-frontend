@@ -6,13 +6,14 @@ import Comic from "../components/Comic";
 function Comics() {
   const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState([]);
-  const [search, setSearch] = useState("");
 
-  const tab = [];
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("http://localhost:3000/comics");
+      const response = await axios.get(
+        "https://marvel-neil.herokuapp.com/comics"
+      );
       console.log(response.data);
       setData(response.data.data.results);
       // console.log(response.data);
@@ -21,6 +22,8 @@ function Comics() {
     fetchData();
   }, []);
 
+  const tab = [];
+
   return (
     <div>
       {isLoading ? (
@@ -28,7 +31,7 @@ function Comics() {
       ) : (
         <div>
           <div>
-            <Searchbarre search={search} setSearch={setSearch} />
+            <Searchbarre />
           </div>
           {data.map((elem, index) => {
             return (
